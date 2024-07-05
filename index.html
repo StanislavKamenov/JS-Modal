@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Modal</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+        font-family: "Noto Sans", sans-serif;
+      }
+
+      .modal-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal {
+        display: none;
+        width: 60vh;
+        max-width: 90%;
+        background: #955251;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        color: white;
+      }
+
+      .modal div {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+      }
+
+      .modal p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+      }
+
+      button {
+        padding: 0.75rem 1rem;
+        border: none;
+        background-color: #333;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #555;
+      }
+
+      .open {
+        background-color: #008cba;
+        margin-bottom: 1rem;
+      }
+
+      .open:hover {
+        background-color: #005f7f;
+      }
+
+      .show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="modal-holder">
+      <button class="open">Open</button>
+      <div class="modal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+          voluptatibus necessitatibus odit suscipit non quibusdam numquam nobis,
+          similique repellat incidunt alias corrupti sit consectetur voluptates
+          labore facere reprehenderit tempore modi!
+        </p>
+        <div>
+          <button class="close">Close</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
